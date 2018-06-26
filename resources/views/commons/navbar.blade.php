@@ -42,6 +42,9 @@
                         <li><a href="{{ route('signup.get') }}">新規登録</a></li>
                         <li><a href="{{ route('login') }}">ログイン</a></li>
                     @endif
+                     <li>
+                                    <a href="{{ route('users.show', Auth::id()) }}">マイページ</a>
+                                </li>
                 </ul>
             </div>
         </div>
