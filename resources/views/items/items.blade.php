@@ -13,10 +13,16 @@
                             @else
                                 <p class="item-title">{{ $item->name }}</p>
                             @endif
-                            <div class="buttons text-center">
+                        </div>
+                        <div class="buttons text-center">
                                 @if (Auth::check())
                                     @include('items.want_button', ['item' => $item])
+                                    @include('items.have_button', ['item' => $item])
                                 @endif
+                        </div>
+                               </div>
+                            </div>
+
                             </div>
                         </div>
                     </div>
